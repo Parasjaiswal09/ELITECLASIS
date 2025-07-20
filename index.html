@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliteclasis - The Billionaire's Cut</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Libre+Franklin:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-name">Eliteclasis</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#collection" class="nav-link">Collection</a></li>
+                <li><a href="#story" class="nav-link">Story</a></li>
+                <li><a href="#lookbook" class="nav-link">Lookbook</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">The Billionaire's Cut</h1>
+                <p class="hero-subtitle">Tailored for Power. Worn by Legacy.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn--primary btn--lg" onclick="scrollToSection('contact')">Reserve Your Fitting</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Collection Section -->
+    <section id="collection" class="collection">
+        <div class="container">
+            <h2 class="section-title">Signature Collection</h2>
+            <p class="section-subtitle">Crafted for the discerning gentleman</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/ecc430ab-6eeb-4ea3-9499-2dfb0303c0b3.png')"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Heritage Collection</h3>
+                        <p class="product-description">Timeless pieces crafted with precision and attention to every detail. Premium materials meet traditional British tailoring.</p>
+                        <button class="btn btn--outline">Discover Craftsmanship</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/ebdadc7a-7884-485b-8310-f0d88709f667.png')"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Executive Overcoat</h3>
+                        <p class="product-description">The perfect fusion of elegance and functionality. Designed for the modern gentleman who demands excellence.</p>
+                        <button class="btn btn--outline">Discover Craftsmanship</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-text">
+                    <h2 class="section-title">Heritage & Discipline</h2>
+                    <p class="story-description">
+                        Born from generations of master craftsmanship, Eliteclasis represents the pinnacle of British tailoring excellence. 
+                        Each piece tells a story of precision, heritage, and the quiet confidence that comes from wearing perfection.
+                    </p>
+                    <p class="story-description">
+                        We believe that true power whispers, never shouts. Our legacy is woven into every thread, 
+                        our heritage stitched into every seam, creating garments for those who understand that the finest things in life are earned.
+                    </p>
+                </div>
+                <div class="story-image">
+                    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/91e744f3-9a85-46d6-9276-e0e2ee15a804.png" alt="Heritage craftsmanship" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lookbook Section -->
+    <section id="lookbook" class="lookbook">
+        <div class="container">
+            <h2 class="section-title centered">The Lookbook</h2>
+            <p class="section-subtitle centered">Excellence in every detail</p>
+            
+            <div class="lookbook-grid">
+                <div class="lookbook-item">
+                    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/91e744f3-9a85-46d6-9276-e0e2ee15a804.png" alt="Eliteclasis Heritage" />
+                    <div class="lookbook-overlay">
+                        <div class="lookbook-crest">EC</div>
+                    </div>
+                </div>
+                <div class="lookbook-item">
+                    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/ecc430ab-6eeb-4ea3-9499-2dfb0303c0b3.png" alt="Signature Collection" />
+                    <div class="lookbook-overlay">
+                        <div class="lookbook-crest">EC</div>
+                    </div>
+                </div>
+                <div class="lookbook-item">
+                    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/ebdadc7a-7884-485b-8310-f0d88709f667.png" alt="Executive Style" />
+                    <div class="lookbook-overlay">
+                        <div class="lookbook-crest">EC</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title centered">Reserve Your Private Consultation</h2>
+                <p class="section-subtitle centered">Join the circle of discerning gentlemen</p>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell us about your requirements"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary btn--lg btn--full-width">Request Private Access</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-name">Eliteclasis</span>
+                    <p class="footer-motto">Fides Fortis Fortuna</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
